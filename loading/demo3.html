@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+
+       *{ margin:0; padding:0;} 
+
+       .test{ width:40px; height:40px; margin:200px auto; position:relative;}
+
+        .test:before{
+            content: "";
+            position:absolute;
+            width:20px;
+            height:20px;
+            background:blue;
+            border-radius:10px;
+            animation: spin1 1.5s infinite ease-in-out;
+        }
+        
+         .test:after{
+            content: "";
+            position:absolute;
+            width:20px;
+            height:20px;
+            border-radius:10px;
+            background:green;
+            left:30px;
+              animation: spin2 1.5s infinite ease-in-out;
+        }
+
+       @keyframes spin1 {
+            0% {transform: translateX(0px) rotate(0deg)}
+            50% {transform: translateX(50px) scale(1.2) rotate(260deg); background:#2ecc71;border-radius:0px;}
+            100% {transform: translateX(0px) rotate(0deg)}
+        }
+
+        @keyframes spin2 {
+             0% {transform: translateX(0px)}
+    50% {transform: translateX(-50px) scale(1.2) rotate(-260deg);background:#9b59b6;border-radius:0px;}
+    100% {transform: translateX(0px)}
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="test">
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css" media="screen">
+
+       *{ margin:0; padding:0;} 
+
+       .wrap{ width:300px;  margin:20px auto;}
+       
+       ul{ margin-top:50px;}
+       li{ 
+            float: left; 
+            width:20px; 
+            height:20px;
+            background:blue;
+            border-radius: 20px;
+            list-style: none;
+            animation:spin 2s infinite ease-in-out ;
+
+        }
+
+        li:nth-child(1){
+            animation-delay: .2s;
+        }
+        li:nth-child(2){
+            animation-delay: .4s;
+        }
+        li:nth-child(3){
+            animation-delay: .6s;
+        }
+        li:nth-child(4){
+            animation-delay: .8s;
+        }
+        li:nth-child(5){
+            animation-delay: 1s;
+        }
+        li:nth-child(6){
+            animation-delay: 1.2s;
+        }
+        li:nth-child(7){
+            animation-delay: 1.4s;
+        }
+        li:nth-child(8){
+            animation-delay: 1.6s;
+        }
+        li:nth-child(9){
+            animation-delay: 1.8s;
+        }
+        li:nth-child(10){
+            animation-delay: 2s;
+        }
+
+       @keyframes spin {
+            0% {transform: translateY(0); box-shadow: 0 0 3px rgba(0,0,0,0.1);}
+            50% {transform: translateY(-20px); box-shadow: 0 20px 3px rgba(0,0,0,0.05); background:yellow;}
+            100% {transform: translateY(0); box-shadow: 0 0 3px rgba(0,0,0,0.1);}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
